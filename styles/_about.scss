@@ -1,0 +1,39 @@
+@use 'layout';
+
+.about {
+    &__info {
+        @include layout.display;
+        margin-top: 4em;
+        margin-bottom: 2em;
+
+        &__img {
+            margin-right: 2em;
+            margin-left: 4em;
+            box-shadow: -30px 30px var(--main-color);
+            
+        }
+
+        &__text {
+            letter-spacing: var(--letter-space);
+            line-height: 2em;
+            width: 500px;
+            
+        }
+
+        @include layout.mobile {
+            display: block;
+
+            &__img {
+            margin-bottom: 2em;
+            box-shadow: none;
+            margin-left: 1em;
+            }
+
+            &__text {
+                font-size: 14px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@use 'layout';
+
+.navbar {
+    padding: 2rem 0;
+    @include layout.display;
+    position: relative;
+
+    
+    &__logo {
+        h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: var(--main-color);
+            border: 2px solid var(--main-color);
+            padding: 8px 10px;
+            letter-spacing: var(--letter-space);
+        }
+        
+    }
+    
+    &__menu {
+        position: absolute;
+        right: 0;
+        top: 42%;
+        font-size: 28px;
+        color: var(--main-color);
+        cursor: pointer;
+        opacity: 0;
+
+        @include layout.mobile {
+            opacity: 1;
+        }
+    }
+    &__links {
+        @include layout.display;
+
+        a {
+            color: #000;
+            text-transform: uppercase;
+            padding-left: 12px;
+            letter-spacing: var(--letter-space);
+
+        
+            &:hover {
+                color: var(--main-color);
+                transition: .4s ease;
+            }
+        }
+
+        @include layout.mobile {
+            position: fixed;
+            left: -100%;
+            width: 100%;
+            top: 7rem;
+            background-color: var(--main-color);
+            transition: .3s;
+            padding: 10px 0;
+            text-align: center;
+            justify-content: space-evenly;
+            
+            
+
+            a {
+                color: #fff;
+                font-size: 12px;
+
+                &:hover {
+                    color: var(--second-color);
+                    transition: .4s;
+                }
+            }
+            &.active {
+                left: 0;
+            }
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    &__img {
+        max-width: 100%;
+        object-fit: contain;
+    
+        @include layout.mobile {
+            object-fit: cover;
+            margin-top: 3em;
+            
+            
+            
+        }
+    }
+
+    &__text {
+        position: absolute;
+        width: 600px;
+        top: 2rem;
+        left: 36vw;
+        font-size: 64px;
+        color: var(--main-color);
+    
+
+        @include layout.mobile {
+            position: absolute;
+            width: 200px;
+            font-size: 22px;
+            top: 4rem;
+            left: 43vw;
+        }
+    }
+}

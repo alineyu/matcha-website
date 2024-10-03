@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mtch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <!--Navbar-->
+      <nav class="navbar container">
+        <div class="navbar__menu">
+          <i class='bx bx-menu' id="menu"></i>
+        </div>
+        <a class="navbar__logo" href="#">
+          <h1>matcha</h1>
+        </a>
+        <ul class="navbar__links">
+          <li><a href="shop">shop</a></li>
+          <li><a href="about">about</a></li>
+          <li><a href="articles">articles</a></li>
+          <li><a href="contact">contact</a></li>
+        </ul>
+      </nav>
+
+      <!--Hero-->
+      <div class="hero container">
+        <img class="hero__img" src="images/bg.jpg" alt="">
+        <h2 class="hero__text">Matcha for a healthy and beautiful lifestyle</h2>
+      </div>
+    </header>
+
+    <!--Shop Section-->
+    <section class="shop">
+      <h3 class="subtitle container">Shop</h3>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/tools/img9.webp" alt=""></div>
+          <div class="swiper-slide"><img src="images/tools/0.webp" alt=""></div>
+          <div class="swiper-slide"><img src="images/tools/2.webp" alt=""></div>
+          <div class="swiper-slide"><img src="images/tools/3.webp" alt=""></div>
+          <div class="swiper-slide"><img src="images/tools/9.webp" alt=""></div>
+          <div class="swiper-slide"><img src="images/tools/img4.webp" alt=""></div>
+          <div class="swiper-slide"><img src="images/tools/img5.webp" alt=""></div>
+          <div class="swiper-slide"><img src="images/tools/img8.webp" alt=""></div>
+          <div class="swiper-slide"><img src="images/tools/5.webp" alt=""></div>
+        </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <section class="about container">
+      <h3 class="subtitle">About</h3>
+      <div class="about__info">
+        <img class="about__info__img" src="images/img7.jpg" alt="">
+        <div class="about__info__text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vitae ex suscipit quibusdam dolorem nemo minima molestiae obcaecati eligendi, consequuntur corporis magni inventore? Aspernatur molestias minus officiis? Odio, reiciendis aut!</p>
+          <button class="btn">View More</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Articles Section-->
+    <section class="articles">
+      <h3 class="subtitle container">Articles</h3>
+      <div class="articles__container container">
+        <div class="articles__container__card">
+          <img src="images/recipes/im2.webp" alt="">
+          <h4>Matcha Recipes</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <button class="btn">View More</button>
+        </div>
+        <div class="articles__container__card">
+          <img src="images/recipes/im5.webp" alt="">
+          <h4>How to prepare</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <button class="btn">View More</button>
+        </div>
+        <div class="articles__container__card">
+          <img src="images/recipes/im6.webp" alt="">
+          <h4>Health-boost Matcha</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <button class="btn">View More</button>
+        </div>
+      </div>
+    </section>
+    
+    <!--Contact Section-->
+    <section class="contact container">
+      <h3 class="subtitle">Contact</h3>
+      <div class="contact__info">
+        <div class="accordion">
+          <div class="accordion__item">
+            <div class="accordion__item--header">
+              <p>What is matcha?</p>
+              <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="accordion__item--content">Matcha (抹茶) is a type of green tea originated in China and brought over to Japan in 1191.</div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__item--header">
+              <p>Does matcha contain caffeine?</p>
+              <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="accordion__item--content">Matcha (抹茶) is a type of green tea originated in China and brought over to Japan in 1191. Unlike any other types of tea, matcha is a finely ground powder made from stone-grinding the finest tea leaves from tea trees grown under unique conditions. Brewing matcha involves whisking it into warm water, as opposed to simply steeping. Thus, the entire leaf is consumed, carrying with it a more sophisticated flavor profile as well as greater nutritional properties than any other types of tea.</div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__item--header">
+              <p>Are Matcha products organic?</p>
+              <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="accordion__item--content">All of our teas are grown organically. We adhere strictly to the Japanese Agricultural Standards (JAS). We have been producing this tea for over 100 years and it is completely safe for consumption.</div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <input type="text" placeholder="Your name">
+          <input type="email" placeholder="Your email">
+          <textarea></textarea>
+          <button class="btn">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer__section container">
+        <div class="footer__info">
+          <p>Some Address, 247</p>
+          <p>info@mysite.com | (55) 48382-5847</p>
+          <p>© 2024 by Matcha</p>
+        </div>
+        <div class="footer__social">
+          <i class='bx bxl-instagram-alt'></i>
+          <i class='bx bxl-facebook' ></i>
+          <i class='bx bxl-youtube'></i>
+          <i class='bx bxl-pinterest' ></i>
+        </div>
+
+      </div>
+    </footer>    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+  
+  spaceBetween: 20,
+  loop: true,
+ 
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+  },
+
+});
+    </script>
+
+<script src="index.js"></script>
+
+  </body>
+</html>

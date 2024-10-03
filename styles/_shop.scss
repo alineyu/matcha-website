@@ -1,0 +1,47 @@
+@use 'layout';
+
+.shop {
+    background-color: var(--second-color);
+    position: relative;
+    margin-top: 80px;
+    padding: 40px 10px;
+
+    .swiper {
+        width: 100%;
+        padding: 40px 10px;
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                display: flex;
+                height: 250px;
+                width: 250px;
+                position: relative;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+                
+            }
+
+        }
+        .swiper-button-next {
+            
+            right: 0;
+        }
+        .swiper-button-prev {
+            left: 0;
+        }
+        .swiper-button-prev, .swiper-button-next {
+            color: var(--third-color);
+            
+        }
+
+
+    
+    }
+    
+}

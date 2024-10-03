@@ -1,0 +1,23 @@
+@use 'layout';
+
+.footer {
+    background-color: var(--second-color);
+    padding: 20px 0;
+    &__section {
+        @include layout.display;
+    }
+
+    &__info {
+        font-size: var(--small-text);
+        line-height: 1.5em;
+    }
+
+    &__social {
+        i {
+            color: var(--main-color);
+            cursor: pointer;
+            font-size: 20px;
+
+        }
+    }
+}

@@ -1,0 +1,74 @@
+@use 'layout';
+
+.contact {
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+
+        @include layout.mobile {
+            display:block;
+        }
+        
+        .form {
+            
+            input, textarea {
+                display: block;
+                width: 400px;
+                padding: 8px;
+                margin-bottom: 10px;
+            }
+            textarea {
+                resize: none;
+                height: 130px;
+
+            }
+        }
+
+        .accordion {
+            width: 400px;
+
+            @include layout.mobile {
+                margin-bottom: 2em;
+            }
+
+            &__item {
+                border: 1px solid #ccc;
+                margin-bottom: .5rem;
+                cursor: pointer;
+                background-color: var(--main-color);
+                color: #fff;
+
+                &--header {
+                    @include layout.display;
+                    margin: 5px;
+                    padding: 8px 12px;
+                    
+                }
+
+                &--content {
+                    display: none;
+                    padding: 8px;
+                    background-color: var(--third-color);
+                    color: #000;
+                    font-size: var(--small-text);
+                    padding: 12px 20px;
+                    
+                }
+
+            }
+
+            &__item.active .accordion__item--content {
+                display: block;
+                
+            }
+
+            &__item.active .bx-chevron-down {
+                transform: rotate(180deg);
+            }
+
+        }
+
+    
+    }
+}
